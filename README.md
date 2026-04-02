@@ -13,17 +13,17 @@
 - Cálculo da média de produção leiteira
 
 > São duas as entidades principais, sendo estas: Vaca e RegistroProducao
-. Vaca: Id, nome, raca
-. RegistroProducao: id, data_registro, litros, vaca_id(chave estrangeira da tabela Vaca, relacionamento 1xN)
+- Vaca: Id, nome, raca
+- RegistroProducao: id, data_registro, litros, vaca_id(chave estrangeira da tabela Vaca, relacionamento 1xN)
 
 > O que cada biblioteca a ser instalada faz?
-.Flask cria a API
-.Flask-OpenAPI3 gera a documentação/Swagger
-.SQLAlchemy cuida do banco
-.Pydantic valida os dados
-.SQLite guarda os dados
-.model/ define as tabelas
-.schemas/ define como a API recebe e responde dados
+- Flask cria a API
+- Flask-OpenAPI3 gera a documentação/Swagger
+- SQLAlchemy cuida do banco
+- Pydantic valida os dados
+- SQLite guarda os dados
+- model/ define as tabelas
+- schemas/ define como a API recebe e responde dados
 
 ---
 ## Como executar 
@@ -33,10 +33,10 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 
 > É fortemente indicado o uso de ambientes virtuais do tipo [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html).
 Passos a serem seguidos, caso você utilize o VsCode:(Para criação do ambiente virtual)
-1- py -m venv meu-env (usar no terminal integrado)
-2- .\meu-env\Scripts\activate (caso der erro, vá para o passo 3, caso não, ignore.)
-3- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  e depois .\meu-env\Scripts\Activate.ps1 
-4- Caso apareça 'meu-env' de cor verde no terminal, significa que deu tudo certo.
+- py -m venv meu-env (usar no terminal integrado)
+- .\meu-env\Scripts\activate (caso der erro, vá para o passo 3, caso não, ignore.)
+- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  e depois .\meu-env\Scripts\Activate.ps1 
+- Caso apareça 'meu-env' de cor verde no terminal, significa que deu tudo certo.
 
 Após já ter criado o ambiente virtual, utilize o seguinte comando para instalar as bibliotecas do requirements.txt:
 .pip install -r requirements.txt
