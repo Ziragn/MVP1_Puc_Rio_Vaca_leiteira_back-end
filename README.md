@@ -16,6 +16,15 @@
 . Vaca: Id, nome, raca
 . RegistroProducao: id, data_registro, litros, vaca_id(chave estrangeira da tabela Vaca, relacionamento 1xN)
 
+> O que cada biblioteca a ser instalada faz?
+.Flask cria a API
+.Flask-OpenAPI3 gera a documentação/Swagger
+.SQLAlchemy cuida do banco
+.Pydantic valida os dados
+.SQLite guarda os dados
+.model/ define as tabelas
+.schemas/ define como a API recebe e responde dados
+
 ---
 ## Como executar 
 
