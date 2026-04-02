@@ -9,7 +9,7 @@ class VacaSchema(BaseModel):
     """
     nome: str = "Mimosa"
     raca: str = "Nelore"
-    producao_leiteira: float = 8
+    
 
 
 class VacaBuscaSchema(BaseModel):
@@ -34,7 +34,6 @@ def apresenta_vacas(vacas: List[Vaca]):
         result.append({
             "nome": vaca.nome,
             "raca": vaca.raca,
-            "producao_leiteira": vaca.producao_leiteira,
         })
 
     return {"vacas": result}
@@ -46,7 +45,7 @@ class VacaViewSchema(BaseModel):
     id: int = 1
     nome: str = "Mimosa"
     raca: str = "Nelore"
-    producao_leiteira: float = 8
+    
    
 
 
@@ -65,5 +64,4 @@ def apresenta_vaca(vaca: Vaca):
         "id": vaca.id,
         "nome": vaca.nome,
         "raca": vaca.raca,
-        "producao_leiteira": vaca.producao_leiteira,
     }
