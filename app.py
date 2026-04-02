@@ -46,9 +46,9 @@ def add_vaca(form: VacaSchema):
     try:
         # criando conexão com a base
         session = Session()
-        # adicionando produto
+        # adicionando a vaca
         session.add(vaca)
-        # efetivando o camando de adição de novo item na tabela
+        # efetivando o comando de adição da nova vaca na tabela
         session.commit()
         logger.debug(f"Adicionado vaca de nome: '{vaca.nome}'")
         return {
