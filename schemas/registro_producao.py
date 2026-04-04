@@ -11,7 +11,7 @@ class RegistroProducaoSchema(BaseModel):
 
     @field_validator("litros")
     @classmethod
-    def validar_litros(cls, value: float):
+    def validar_litros(cls, value: float):  # Valida litros para que sejam positivos
         if value <= 0:
             raise ValueError("A quantidade de litros deve ser maior que zero.")
         return value
