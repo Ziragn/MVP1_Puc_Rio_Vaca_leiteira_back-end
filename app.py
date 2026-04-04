@@ -10,7 +10,7 @@ from logger import logger
 from schemas import *
 from flask_cors import CORS
 
-info = Info(title="Minha API", version="1.0.0")
+info = Info(title="Minha API de Vacas", version="1.0.0")
 app = OpenAPI(__name__, info=info)
 CORS(app)
 
