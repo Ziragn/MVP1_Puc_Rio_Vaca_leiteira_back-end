@@ -94,7 +94,7 @@ def get_vacas():
 @app.get('/vaca', tags=[vaca_tag],
          responses={"200": VacaViewSchema, "404": ErrorSchema})
 def get_produto(query: VacaBuscaSchema):
-    """Faz a busca por uma vaca a partir do id do vaca
+    """Faz a busca por uma vaca a partir do nome do vaca
 
     Retorna uma representação das vacas
     """
